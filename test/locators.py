@@ -1,0 +1,74 @@
+from selenium.webdriver.common.by import By
+# Кнопки на главной странице
+class BUTTON:
+    # Кнопка Личный Кабинет
+    personal_account_button = (By.XPATH, './/p[text() = "Личный Кабинет"]')
+    # Кнопка логотип
+    logo_button = (By.XPATH, '//a[@href="/"]')
+    # Кнопка Лента заказов
+    order_feed_button = (By.XPATH, '//p[text() = "Лента Заказов"]')
+    #Кнопка конструктор
+    constructor_button = (By.XPATH, '//p[text() = "Конструктор"]')
+    #Кнопка "Войти в аккаунт"
+    entrance_in_account = (By.XPATH, './/button[text() = "Войти в аккаунт"]')
+    #Кнопка "Выйти из аккаунт"
+    exit_from_account = (By.XPATH, './/button[text() = "Выход"]')
+    #Кнопка "Оформить заказ"
+    place_an_order = (By.XPATH, './/button[text() = "Оформить заказ"]')
+# Форма входа
+class ENTRANCE:
+    # Поле email
+    field_email = (By.XPATH, '//input[@name="name"]')
+    field_password = (By.XPATH, './/h2[text() = "Вход"]/following::input[@type="password"]')
+    # Кнопка войти
+    entrance_button1 = (By.XPATH, './/button[@class = "button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa" and text() = "Войти"]')
+    # Кнопка зарегестрироваться
+    signup = (By.XPATH, './/a[@class="Auth_link__1fOlj" and text()= "Зарегистрироваться"]')
+    # Кнопка Восстановить пароль
+    restore_password = (By.XPATH, './/a[@class="Auth_link__1fOlj" and text() = "Восстановить пароль"]')
+    # Текст "Некорректный пароль"
+    invalid_password = (By.XPATH, './/p[text() = "Некорректный пароль"]')
+# Форма регестрации
+class SIGNUP:
+    # Поле имя
+    field_name = (By.XPATH, './/h2[text() = "Регистрация"]/following::fieldset[1]//input')
+    # Поле email
+    field_email = (By.XPATH, './/h2[text() = "Регистрация"]/following::fieldset[2]//input')
+    # Поле пароль 
+    filed_password2 = (By.XPATH, './/h2[text() = "Регистрация"]/following::fieldset[3]//input')
+    # Кнопка Зарегестрироваться
+    button_signup = (By.XPATH, './/form//button[text()="Зарегистрироваться"]')
+    # Кнопка Войти
+    entrance_button2 = (By.XPATH, './/a[@class="Auth_link__1fOlj" and text()= "Войти"]')
+    # Надпись при дублирование данных при регестрации 
+    text_during_dubbing = (By.XPATH, './/p[text()= "Такой пользователь уже существует"]')
+# Форма восстановления пароля 
+class RESTORE:
+    field_email1 = (By.XPATH, './/h2[text() = "Восстановление пароля"]/following::input[@type="text"]')
+    button_restore = (By.XPATH, './/h2[text() = "Восстановление пароля"]/following::button[text() = "Восстановить"]')
+    entrance_button3 = (By.CLASS_NAME, 'Auth_link__1fOlj' )
+
+#Текущие ссылки
+class URL:
+    #ссылка главной страницы 
+    current_url_home_page = 'https://stellarburgers.nomoreparties.site/' 
+    #ссылка ленты заказов 
+    current_url_order_feed = 'https://stellarburgers.nomoreparties.site/feed'
+    #ссылка формы регестрации
+    current_url_form_signup = 'https://stellarburgers.nomoreparties.site/register'
+    #ссылка формы восстановления пароля 
+    current_url_recovery_password = 'https://stellarburgers.nomoreparties.site/forgot-password'
+    #ссылка формы входа
+    current_url_entrance = 'https://stellarburgers.nomoreparties.site/login'
+    #ссылка личного кабинета
+    current_url_personal_account = 'https://stellarburgers.nomoreparties.site/account/profile'
+
+#Конструктор 
+class KON:
+    #Кнопка булки
+    button_buns = (By.XPATH, '//span[text()="Булки"]')
+    #Кнопка соусы
+    button_sauces = (By.XPATH, '//span[text()="Соусы"]')
+    #Кнопка начинка
+    button_fillings = (By.XPATH, '//span[text()="Начинки"]')
+    active_tabl =  (By.CSS_SELECTOR, ".tab_tab_type_current__2BEPc")
