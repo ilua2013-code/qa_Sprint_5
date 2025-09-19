@@ -1,6 +1,3 @@
-import pytest
-
-
 from data import DATA
 from locators import SIGNUP, BUTTON, ENTRANCE, URL
 from selenium.webdriver.support import expected_conditions

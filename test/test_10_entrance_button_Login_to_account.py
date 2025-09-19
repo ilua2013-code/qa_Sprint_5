@@ -1,6 +1,3 @@
-import pytest
-
-
 from locators import BUTTON, ENTRANCE, URL
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait

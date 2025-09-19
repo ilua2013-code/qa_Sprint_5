@@ -7,7 +7,7 @@ Pytest - фреймворк для тестирования
 
 Selenium WebDriver - автоматизация браузера
 
-Page Object Pattern - паттерн проектирования
+
 
 Структура проекта
 text

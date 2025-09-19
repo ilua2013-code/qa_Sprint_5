@@ -1,9 +1,6 @@
-import pytest
-
 from locators import SIGNUP, BUTTON, ENTRANCE, URL
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-
 
 
 class TestFormRegis:

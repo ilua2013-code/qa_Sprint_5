@@ -1,7 +1,3 @@
-import pytest
-
-
-from data import DATA
 from locators import URL, KON
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait

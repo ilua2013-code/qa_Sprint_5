@@ -1,6 +1,3 @@
-import pytest
-
-
 from data import DATA
 from locators import SIGNUP, BUTTON, ENTRANCE, URL
 from selenium.webdriver.support import expected_conditions
@@ -21,4 +18,4 @@ class TestSignup:
         WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located(ENTRANCE.entrance_button1))
         assert driver.current_url == URL.current_url_entrance
         
-
+        
