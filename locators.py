@@ -35,7 +35,7 @@ class SIGNUP:
     # Поле email
     field_email = (By.XPATH, './/h2[text() = "Регистрация"]/following::fieldset[2]//input')
     # Поле пароль 
-    filed_password2 = (By.XPATH, './/h2[text() = "Регистрация"]/following::fieldset[3]//input')
+    field_password2 = (By.XPATH, './/h2[text() = "Регистрация"]/following::fieldset[3]//input')
     # Кнопка Зарегестрироваться
     button_signup = (By.XPATH, './/form//button[text()="Зарегистрироваться"]')
     # Кнопка Войти
