@@ -15,7 +15,7 @@ class BUTTON:
     exit_from_account = (By.XPATH, './/button[text() = "Выход"]')
     #Кнопка "Оформить заказ"
     place_an_order = (By.XPATH, './/button[text() = "Оформить заказ"]')
-# Форма входа
+# Форма входа 
 class ENTRANCE:
     # Поле email
     field_email = (By.XPATH, '//input[@name="name"]')
