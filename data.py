@@ -2,6 +2,10 @@ import random
 
 
 class DATA:
+    name = 'Илья'
+    password = '123456'
+    Email = 'ilya_volkov_31_749@yandex.ru'
+    
     @staticmethod
     def generate_email():
         return 'ilya_volkov_31_'+ str(random.randint(100,999)) + '@yandex.ru'

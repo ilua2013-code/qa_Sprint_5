@@ -12,9 +12,9 @@ class TestSameData:
         driver.find_element(*BUTTON.personal_account_button).click()
         driver.find_element(*ENTRANCE.signup).click()
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(SIGNUP.entrance_button2))
-        driver.find_element(*SIGNUP.field_name).send_keys('Илья')
-        driver.find_element(*SIGNUP.field_email).send_keys('ilya_volkov_31_749@yandex.ru')
-        driver.find_element(*SIGNUP.field_password2).send_keys('123456')
+        driver.find_element(*SIGNUP.field_name).send_keys(DATA.name)
+        driver.find_element(*SIGNUP.field_email).send_keys(DATA.Email)
+        driver.find_element(*SIGNUP.field_password2).send_keys(DATA.password)
         driver.find_element(*SIGNUP.button_signup).click()
         WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located(SIGNUP.text_during_dubbing))
         assert driver.current_url == URL.current_url_form_signup
