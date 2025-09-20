@@ -15,7 +15,7 @@ class BUTTON:
     exit_from_account = (By.XPATH, './/button[text() = "Выход"]')
     #Кнопка "Оформить заказ"
     place_an_order = (By.XPATH, './/button[text() = "Оформить заказ"]')
-# Форма входа
+# Форма входа 
 class ENTRANCE:
     # Поле email
     field_email = (By.XPATH, '//input[@name="name"]')
@@ -31,11 +31,11 @@ class ENTRANCE:
 # Форма регестрации
 class SIGNUP:
     # Поле имя
-    field_name = (By.XPATH, './/h2[text() = "Регистрация"]/following::fieldset[1]//input')
+    field_name = (By.XPATH, './/label[text() = "Имя"]/following-sibling::input')
     # Поле email
-    field_email = (By.XPATH, './/h2[text() = "Регистрация"]/following::fieldset[2]//input')
+    field_email = (By.XPATH, './/label[text() = "Email"]/following-sibling::input')
     # Поле пароль 
-    filed_password2 = (By.XPATH, './/h2[text() = "Регистрация"]/following::fieldset[3]//input')
+    field_password2 = (By.XPATH, './/label[text() = "Пароль"]/following-sibling::input')
     # Кнопка Зарегестрироваться
     button_signup = (By.XPATH, './/form//button[text()="Зарегистрироваться"]')
     # Кнопка Войти
