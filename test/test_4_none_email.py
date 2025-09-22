@@ -6,8 +6,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class TestNoneEmail:
     def test_none_email(self,  driver):
+        """Тест регистрации с пустым Email"""
         driver.get(DATA.current_url_home_page)
-
         driver.find_element(*BUTTON.personal_account_button).click()
         driver.find_element(*ENTRANCE.signup).click()
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(SIGNUP.entrance_button2))

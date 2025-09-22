@@ -6,8 +6,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class TestSameData:
     def test_same_data(self,  driver):
+        """Тест регистрации с данными существующего аккаунта"""
         driver.get(DATA.current_url_home_page)
-
         driver.find_element(*BUTTON.personal_account_button).click()
         driver.find_element(*ENTRANCE.signup).click()
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(SIGNUP.entrance_button2))
