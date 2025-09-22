@@ -5,7 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 
 class TestEntrance:
-    """Тест вход через кнопку в форме регистрации"""
+    """Тест вход через кнопку в форме регистрации""" 
     def test_entrance_from_registration_form(self, driver):
         driver.get(DATA.current_url_recovery_password)
         driver.find_element(*SIGNUP.entrance_button2).click()
