@@ -5,6 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 
 class TestSignup:
+    """Тест регистрации"""
     def test_signup(self, driver):
         driver.get(DATA.current_url_home_page)
         driver.find_element(*BUTTON.personal_account_button).click()

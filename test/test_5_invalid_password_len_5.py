@@ -7,9 +7,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class TestInvalidPass:
     def test_invalid_pass(self,  driver):
-        
+        """Тест регистрации с паролем меньше 6 символов"""
         driver.get(DATA.current_url_home_page)
-
         driver.find_element(*BUTTON.personal_account_button).click()
         driver.find_element(*ENTRANCE.signup).click()
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(SIGNUP.entrance_button2))
