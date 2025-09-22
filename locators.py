@@ -48,21 +48,6 @@ class RESTORE:
     button_restore = (By.XPATH, './/h2[text() = "Восстановление пароля"]/following::button[text() = "Восстановить"]')
     entrance_button3 = (By.CLASS_NAME, 'Auth_link__1fOlj' )
 
-#Текущие ссылки
-class URL:
-    #ссылка главной страницы 
-    current_url_home_page = 'https://stellarburgers.nomoreparties.site/' 
-    #ссылка ленты заказов 
-    current_url_order_feed = 'https://stellarburgers.nomoreparties.site/feed'
-    #ссылка формы регестрации
-    current_url_form_signup = 'https://stellarburgers.nomoreparties.site/register'
-    #ссылка формы восстановления пароля 
-    current_url_recovery_password = 'https://stellarburgers.nomoreparties.site/forgot-password'
-    #ссылка формы входа
-    current_url_entrance = 'https://stellarburgers.nomoreparties.site/login'
-    #ссылка личного кабинета
-    current_url_personal_account = 'https://stellarburgers.nomoreparties.site/account/profile'
-
 #Конструктор 
 class KON:
     #Кнопка булки

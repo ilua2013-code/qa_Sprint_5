@@ -1,12 +1,12 @@
 from data import DATA
-from locators import SIGNUP, BUTTON, ENTRANCE, URL
+from locators import SIGNUP, BUTTON, ENTRANCE
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 
 class TestInvalidEmail:
     def test_invalid_email(self,  driver):
-        driver.get(URL.current_url_home_page)
+        driver.get(DATA.current_url_home_page)
 
         driver.find_element(*BUTTON.personal_account_button).click()
         driver.find_element(*ENTRANCE.signup).click()
@@ -16,5 +16,5 @@ class TestInvalidEmail:
         driver.find_element(*SIGNUP.field_password2).send_keys(DATA.generate_password())
         driver.find_element(*SIGNUP.button_signup).click()
 
-        assert driver.current_url == URL.current_url_form_signup
+        assert driver.current_url == DATA.current_url_form_signup
         
